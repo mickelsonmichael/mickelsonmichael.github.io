@@ -1,0 +1,23 @@
+
+a.nodecoration {
+    text-decoration: none;
+}
+
+ul.ui.steps {
+    list-style: none;
+}
+
+li.ui.active > a > .step {
+    cursor: auto;
+    background: #f0f0f0;
+}
+
+li.ui > a {
+    cursor: pointer;
+}
+
+li.ui.active > a > .step::after {
+    display: block !important;
+    content: '';
+    background: #f0f0f0;
+}

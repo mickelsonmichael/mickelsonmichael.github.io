@@ -3,41 +3,43 @@
 <html lang=en ng-app="Vermin">
 
 <head>
-  <meta http-equiv=X-US-Compatible content=IE=edge />
-  <meta char=UTF-8 />
-  <meta name=viewport content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv=X-US-Compatible content="IE=edge" />
+    <meta char=UTF-8 />
+    <meta name=viewport content="width=device-width, initial-scale=1.0" />
 
-  <title>Vermintide Guide</title>
+    <title>Vermintide Guide</title>
+    
+    <link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+    <link rel="stylesheet" href="CSS/Site.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.1/angular-route.min.js"></script>
 
-  <link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
-  <link rel="stylesheet" href="CSS/Site.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <script src="https://code.angularjs.org/1.2.1/angular-route.min.js"></script>
+    <base href="/" />
 </head>
 
 <body>
-  <header class="ui fixed inverted menu">
-    <div class="ui container">
-      <a class="header item" href=#>Vermintide Tomes</a>
-      <div class="ui simple dropdown item">
-          Act 1
-          <i class="dropdown icon"></i>
-          <div class=menu>
-            <a href="#!horn" class=item>The Horn of Magnus</a>
-          </div>
-        </li>
-    </div>
-  </header>
+    <header class="ui fixed inverted menu">
+        <div class="ui container">
+            <a class="header item" href=#>Vermintide Tomes</a>
+            <div class="ui simple dropdown item">
+                Act 1
+                <i class="dropdown icon"></i>
+                <div class=menu>
+                    <a href="/horn" class=item>The Horn of Magnus</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <section ng-view>
+    <section ng-view class="ui container">
+        
+    </section>
 
-  </section>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
-<script src="Scripts/Site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <script src="Scripts/Site.js"></script>
 </body>
 </html>

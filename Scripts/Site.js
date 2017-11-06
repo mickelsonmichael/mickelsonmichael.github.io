@@ -2,9 +2,12 @@
 
 var app = angular.module("Vermin", ["ngRoute"]);
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "Pages/horn.htm"
-    });
+        templateUrl : "horn.htm"
+        });
+
+    $locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('');
 });
