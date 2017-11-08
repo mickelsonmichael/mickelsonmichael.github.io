@@ -45,6 +45,7 @@ background.map {
 
 background.sewer {
     background-image: url('../images/sewer.jpg');
+    opacity: 0.7;
 }
 
 .jumbotron.inverse, .panel-inverse {
