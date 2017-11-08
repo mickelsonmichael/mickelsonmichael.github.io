@@ -48,6 +48,13 @@ background.sewer {
     opacity: 0.7;
 }
 
+.panel-background {
+    background: url('../images/city.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+    border: 1px solid #111;
+}
+
 .jumbotron.inverse, .panel-inverse {
     border: 1px solid;
     background-color: #222;
