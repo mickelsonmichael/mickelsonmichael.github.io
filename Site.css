@@ -1,0 +1,170 @@
+﻿html, body {
+    height: 100%;
+}
+
+/*
+    Introduction
+*/
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.intro > div {
+        /*Positioning*/
+        position: absolute;
+
+        /*Coloring*/
+        background-color: #7971ef;
+        padding: .5em 1.5em;
+        margin: 0 1em;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .intro > div > h1 {
+        margin: 0 auto;
+    }
+
+    .intro > div > h2 {
+        margin: 0 auto;
+    }
+
+
+/*
+    Parralax background
+*/
+
+
+background {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: fixed no-repeat center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+background.hanginglake {
+    background-image: url('images/hanging_lake.jpg');
+}
+
+background.arcade {
+    background-image: url('images/arcade.jpg');
+    opacity: 0.4;
+}
+
+background.glenwoodsprings {
+    background-image: url('images/glenwoodwprings.jpg');
+    opacity: 0.4;
+}
+
+background.bishop {
+    background-image: url('images/bishop.jpg');
+    opacity: 0.4;
+}
+
+background.river {
+    background-image: url('images/river.jpg');
+    opacity: 0.4;
+}
+
+/*Parallax only on desktop or large tablets*/
+@media only screen and (max-device-width: 700px) {
+    background {
+        background-attachment: scroll;
+    }
+}
+
+/*
+    Header
+*/
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 99;
+}
+
+    .header-text.fixed-top {
+        position: fixed;
+        top: 0;
+    }
+
+    header > div.header-text, header > spacer {
+        height: 4em;
+    }
+
+    header > div.header-text {
+        position: absolute;
+        background-color: #333;
+        padding: 0 2em;
+        margin: 0;
+        color: #ddd;
+        width: 100%;
+        top: 0;
+
+        display: table;
+    }
+
+        header > div.header-text.fixed-top {
+            position:fixed;
+        }
+
+        header > div.header-text > a {
+            text-decoration: none;
+            color: #ddd;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+            header > div.header-text > a:hover {
+                color: #bbb;
+                text-decoration: none;
+            }
+
+            header > div.header-text > a > h1 {
+                margin: 0;
+                display: inline;
+                font-size: 2em;
+            }
+
+        header > spacer {
+            display: block;
+            width: 1px;
+        }
+
+section {
+    
+}
+
+    section > .segment {
+        height: 80vh;
+        position: relative;
+        padding: 1em;
+
+        border-bottom: 1em solid #666;
+    }
+
+    section > .segment > h2 {
+        position: relative;
+        
+    }
+
+
+footer {
+    min-height: 40vh;
+    background: #333;
+}
