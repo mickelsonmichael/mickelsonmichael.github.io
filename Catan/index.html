@@ -3,121 +3,121 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel=stylesheet type=text/css href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+    <title>Catan Dice Counter</title>
+    <link rel=stylesheet type=text/css href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 
-<body>
-
+<body style="padding-top: 1em">
+    <section class=container>
         <nav class="navbar navbar-default">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Catan Tools</a>
-            </div>
-        <!--     <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li>
-            </ul> -->
-          </div>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Catan Dice Counter</a>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://mickelsonmichael.github.io">Home</a>
+                    </li>
+                </div>
+            </div>
         </nav>
 
-        <section class=container>
-            <div class=row>
-                <div class="col-md-6">
+        <div class=row>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class=panel-heading>
+                        <div class=panel-title>Dice Rolls (Numbers)</div>
+                    </div>
+
+                    <div class=panel-body>
+                            <table class="table table-striped">
+                                    <tbody>
+                                        <tr ng-repeat="n in [2,3,4,5,6,7,8,9,10,11,12]">
+                                            <td class=text-center>
+                                                <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
+                                                <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>{{n}} |</b> <span class=val>0</span></span>
+                                                <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
+                                            </td>
+                                        </tr>                                           
+                                    </tbody>
+                                </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class=panel-heading>
-                            <div class=panel-title>Dice Rolls (Numbers)</div>
+                            <div class=panel-title>Dice Rolls (Cities & Knights)</div>
                         </div>
 
                         <div class=panel-body>
                                 <table class="table table-striped">
                                         <tbody>
-                                            <tr ng-repeat="n in [2,3,4,5,6,7,8,9,10,11,12]">
+                                            <tr>
                                                 <td class=text-center>
                                                     <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
-                                                    <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>{{n}} |</b> <span class=val>0</span></span>
+                                                    <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Barb |</b> <span class=val>0</span></span>
                                                     <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
                                                 </td>
-                                            </tr>                                           
+                                            </tr>
+                                            <tr>
+                                                <td class=text-center>
+                                                    <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
+                                                    <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Blue |</b> <span class=val>0</span></span>
+                                                    <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=text-center>
+                                                    <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
+                                                    <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Green |</b> <span class=val>0</span></span>
+                                                    <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=text-center>
+                                                    <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
+                                                    <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Yellow |</b> <span class=val>0</span></span>
+                                                    <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                         </div>
                     </div>
                 </div>
+        </div>
 
-                <div class="col-md-6">
-                        <div class="panel panel-default">
-                            <div class=panel-heading>
-                                <div class=panel-title>Dice Rolls (Cities & Knights)</div>
-                            </div>
-    
-                            <div class=panel-body>
-                                    <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td class=text-center>
-                                                        <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
-                                                        <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Barb |</b> <span class=val>0</span></span>
-                                                        <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class=text-center>
-                                                        <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
-                                                        <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Blue |</b> <span class=val>0</span></span>
-                                                        <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class=text-center>
-                                                        <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
-                                                        <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Green |</b> <span class=val>0</span></span>
-                                                        <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class=text-center>
-                                                        <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
-                                                        <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Yellow |</b> <span class=val>0</span></span>
-                                                        <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </section>
+    </section>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <script>
-            var app = angular.module('myApp', []);
+    <script>
+        var app = angular.module('myApp', []);
 
-            $(function() {
-                
-            })
+        $(function() {
+            
+        })
 
-            function increment(sender) {
-                var counter = $(sender).parent().find('.val');
+        function increment(sender) {
+            var counter = $(sender).parent().find('.val');
 
-                counter.text( Number(counter.text()) + 1 );
-                return false;
+            counter.text( Number(counter.text()) + 1 );
+            return false;
+        }
+
+        function decrement(sender) {
+            var counter = $(sender).parent().find('.val');
+
+            if (Number(counter.text()) > 0) {
+                counter.text( Number(counter.text()) - 1);
             }
-
-            function decrement(sender) {
-                var counter = $(sender).parent().find('.val');
-
-                if (Number(counter.text()) > 0) {
-                    counter.text( Number(counter.text()) - 1);
-                }
-                
-                return false;
-            }
-        </script>
+            
+            return false;
+        }
+    </script>
 </body>
 </html>
