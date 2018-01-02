@@ -233,7 +233,14 @@
 
         function lockPlayers(sender) {
             $(sender).parent().toggleClass('active');
-            $('#addPlayerBtnWrapper button').toggle();
+
+            if ($(sender).parent().hasClass('active')) {
+                $('#addPlayerBtnWrapper button').hide();
+            }
+            else {
+                $('#addPlayerBtnWrapper button').show();
+            }
+            
             return false;
         }
 
