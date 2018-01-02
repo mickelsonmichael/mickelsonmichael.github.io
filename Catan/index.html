@@ -29,6 +29,18 @@
             </div>
         </nav>
 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-danger">
+                    <p style="font-size: 1.5em"><b>Catan: </b><span id="defense">0</span></p>
+                    <p style="font-size: 1.5em"><b>Barbarians: </b><span id="barbs">2</span></p>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+
+        
 
         <div class="row">
             <div id=player1 class="player col-md-4">
@@ -40,12 +52,18 @@
                     <div class="panel-body text-center">
                         <p class=vp>
                             <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
-                            <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Victory Points:</b> <span class=val>0</span></span>
+                            <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Victory Points:</b> <span class=val>3</span></span>
                             <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
                         </p>
-                        <p class=vp>
+                        <hr />
+                        <p class=knights>
                             <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
                             <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Knights:</b> <span class=val>0</span></span>
+                            <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
+                        </p>
+                        <p class=cities>
+                            <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
+                            <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Cities:</b> <span class=val>1</span></span>
                             <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
                         </p>
                     </div>
@@ -61,12 +79,18 @@
                     <div class="panel-body text-center">
                         <p class=vp>
                             <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
-                            <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Victory Points:</b> <span class=val>0</span></span>
+                            <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Victory Points:</b> <span class=val>3</span></span>
                             <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
                         </p>
-                        <p class=vp>
+                        <hr />
+                        <p class=knights>
                             <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
                             <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Knights:</b> <span class=val>0</span></span>
+                            <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
+                        </p>
+                        <p class=cities>
+                            <button type=button class="btn btn-sm btn-default" onclick="return decrement(this);">-</button>
+                            <span style="margin: 0 1em; font-size: 1.2em; vertical-align: middle;"><b>Cities:</b> <span class=val>1</span></span>
                             <button type=button class="btn btn-sm btn-success" onclick="return increment(this);">+</button>
                         </p>
                     </div>
@@ -140,21 +164,46 @@
             
         })
 
+        // Increment counters
         function increment(sender) {
+            // get the current value
             var counter = $(sender).parent().find('.val');
 
+            // increment by 1
             counter.text( Number(counter.text()) + 1 );
+
+            // if increasing the number of cities, add a victory point
+            if ($(sender).parent().hasClass('cities')) {
+                var vp = $(sender).parent().parent().find('.vp').find('.val');
+                vp.text( Number(vp.text()) + 1 );
+            }
+
+            updateDefense();
             return false;
         }
 
+        // decrement counters
         function decrement(sender) {
+            // get the current value of the counter
             var counter = $(sender).parent().find('.val');
 
+            // only proceed if the number is not 0 (avoid going negative)
             if (Number(counter.text()) > 0) {
+                // reduce by 1
                 counter.text( Number(counter.text()) - 1);
+
+                // if decreasing the number of cities, remove a victory point
+                if ($(sender).parent().hasClass('cities')) {
+                    // find the vp counter
+                    var vp = $(sender).parent().parent().find('.vp').find('.val');
+                    // set the value
+                    vp.text( Number(vp.text()) - 1 );
+                }
             }
-            
+
+            updateDefense();
             return false;
+
         }
 
         function addPlayer(sender) {
@@ -163,6 +212,8 @@
             if ($('.player').length == 6){
                 $(sender).hide();
             }
+
+            updateDefense();
         }
 
         function removePlayer(sender) {
@@ -176,12 +227,35 @@
                     alert('Must have at least two players');
                 }
             }
+
+            updateDefense();
         }
 
         function lockPlayers(sender) {
             $(sender).parent().toggleClass('active');
             $('#addPlayerBtnWrapper button').toggle();
             return false;
+        }
+
+        function updateDefense() {
+            var barbs = 0, def = 0;
+            $('.player .cities .val').each(function() {
+                barbs += Number($(this).text());
+            })
+
+            $('.player .knights .val').each(function() {
+                def += Number($(this).text());
+            })
+
+            $('#barbs').text(barbs);
+            $('#defense').text(def);
+
+            if (barbs > def && !$('.alert').hasClass('alert-danger')) {
+                $('.alert').addClass('alert-danger').removeClass('alert-success');
+            }
+            else if (barbs <= def && !$('.alert').hasClass('alert-success')) {
+                $('.alert').addClass('alert-success').removeClass('alert-danger');
+            }
         }
     </script>
 </body>
