@@ -5,5 +5,74 @@
 }
 
 body {
-    padding-top: 56px;
+    padding-top: 102px;
+}
+
+@media (max-width: 776px) {
+    body {
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 166px;
+    }
+}
+
+@media (max-width: 459px) {
+    body {
+        padding-top: 204px;
+    }
+}
+
+@media (max-width: 382px) {
+    body {
+        padding-top: 252px;
+    }
+}
+
+@media (max-width: 302px) {
+    body {
+        padding-top: 290px;
+    }
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .25;
+
+    background-image: url("images/arcade.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opaque {
+    background-color: rgba(255,255,255,0.8);
+}
+
+footer {
+    padding: 2em 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul > li {
+    padding-left: 1em;
+}
+
+footer  a {
+    color: #6c757d;
+}
+
+footer a:hover {
+    color: #4f565c;
 }
