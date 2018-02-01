@@ -7,19 +7,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="Site.css" />
     <title>Michael Mickelson</title>
   </head>
   <body>
         
 
-    <div class="container-fluid fixed-top">
-      <div class="row" style="background-color: #333399; color: white;">
-        <div class="col-md-7 offset-md-1 align-self-center">
+    <!--  TITLE/HEADER -->
+    <div class="container-fluid">
+      <div class="row title">
+        <div class="col-md-8 align-self-center">
           <h1>Michael Mickelson</h1>
           <h2>Web Applications Developer</h2>
         </div>
-        <div class="col-md-3 align-self-center text-right">
+        <div class="col align-self-center text-right">
           <address>
             Kalamazoo, MI 49006<br />
             <b>mickelsonmichael@gmail.com</b><br />
@@ -28,39 +30,69 @@
       </div>
     </div>
 
-      <div class="container marketing">
-            <br />
-
-            <div class="row featurette">
-                <div class="col-md-12">
-                    <h2 class="featurette-heading"><i class="far fa-lightbulb fa-lg fa-fw"></i> Experience</h2>
-                    <p class="lead"><b>Web Developer at <a href="https://www.colostate.edu/">Colorado State University</a></b> <span class="text-muted">July 2013 - Preset</span></p>
-                    <ul class="lead">
-                        <li>Developed for the <a href="https://studentachievement.colostate.edu/">Collaborative for Student Achievement</a></li>
-                        <li>Created multiple web applications for staff use
-                            <ul>
-                                <li>Built an emailing tool allowing staff to send official messages to any student within the database or any email address</li>
-                                <li>An <abbr title="Resident Assistant">RA</abbr> Meeting Tool encouraging interactions between the staff members and their students</li>
-                                <li>Housing Communities Approval System reminding community leaders which students have been approved for a community and which students have not</li>
-                                <li>Converted a paper form for credit card purchase approvals, allowing the uploading of receipts and other documents</li>
-                                <li>Instituted an image hosting site for staff use</li>
-                            </ul>
-                        </li>
-                        <li>Worked independentaly and in groups to achieve deliverables on schedule</li>
-                        <li>Explored additional opportunities for tool creation beyond directive</li>
-                        <li>Assisted non-technical staff with computing issues including hardware and software</li>
-                        <li>Utilized Mojoportal <abbr title="Content Management Systems">CMS</abbr></li>
-                    </p>
+    <!-- EXPERIENCE -->
+    <div class="container-fluid marketing">
+        <div class="row section-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1" data-aos="fade-right">
+                        <h2 class="featurette-heading"><i class="far fa-lightbulb fa-fw"></i></h2>
+                     </div>
+                    <div class="col" data-aos="fade-left">
+                        <h2 class="featurette-heading"> Experience</h2>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <hr />
-
-            
-
-            <div class="row featurette">
+        <div class="row">
+            <div class="container">
+                <div class="row">
                     <div class="col-md-12">
-                        <h2 class="featurette-heading"><i class="fas fa-graduation-cap fa-lg fa-fw"></i> Education</h2>
+                        <p class="lead"><b>Web Developer at <a href="https://www.colostate.edu/">Colorado State University</a></b> <span class="text-muted">July 2013 - Preset</span></p>
+                        <ul class="lead">
+                            <li>Developed for the <a href="https://studentachievement.colostate.edu/">Collaborative for Student Achievement</a></li>
+                            <li>Created multiple web applications for staff use
+                                <ul>
+                                    <li>Built an emailing tool allowing staff to send official messages to any student within the database or any email address</li>
+                                    <li>An <abbr title="Resident Assistant">RA</abbr> Meeting Tool encouraging interactions between the staff members and their students</li>
+                                    <li>Housing Communities Approval System reminding community leaders which students have been approved for a community and which students have not</li>
+                                    <li>Converted a paper form for credit card purchase approvals, allowing the uploading of receipts and other documents</li>
+                                    <li>Instituted an image hosting site for staff use</li>
+                                </ul>
+                            </li>
+                            <li>Worked independentaly and in groups to achieve deliverables on schedule</li>
+                            <li>Explored additional opportunities for tool creation beyond directive</li>
+                            <li>Assisted non-technical staff with computing issues including hardware and software</li>
+                            <li>Utilized Mojoportal <abbr title="Content Management Systems">CMS</abbr></li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <!-- EDUCATION -->
+    <div class="container-fluid marketing">
+        <div class="row section-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1" data-aos="fade-right">
+                        <h2 class="featurette-heading"><i class="fas fa-graduation-cap fa-fw"></i></h2>
+                        </div>
+                    <div class="col" data-aos="fade-left">
+                        <h2 class="featurette-heading"> Education</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
                         <p class="lead"><b>Bachelor's of Science from Colorado State Univsersity <span class="text-muted">(2017)</span></b></p>
                         <ul class="lead">
                             <li>Biological Science with a concentration in Anatomy and Physiology</li>
@@ -68,90 +100,132 @@
                         <p class="lead"><b>Thompson Valley High School <span class="text-muted">(2012)</span></b></p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <hr />
+    <br />
 
-            <div class="row featurette">
-                <div class="col-lg-12">
-                    <h2 class="featurette-heading"><i class="fas fa-desktop fa-lg fa-fw"></i> Computing Skills <span class="text-muted">and Languages</span></h2>
-                    <ul class="lead">
-                        <li>Windows Applications
-                            <ul>
-                                    <li>Microsoft Office, Excel, Power Point, Outlook</li>
-                                    <li>Google Drive, Docs, Sheets, Slides</li>
-                                    <li>Visual Studio Community and Pro</li>
-                                    <li>Visual Studio Code</li>
-                                    <li>Github Desktop</li>
-                            </ul>
-                        </li>
-                        <p class="lead">Operating Systems including Windows (Vista, 7, 8, 10, SQL Server) and Linux</p>
-                        <li>Programming Languages and Tools
-                            <ul>
-                                <li>C#, MVC, ASP.NET</li>
-                                <li>HTML, CCS3, Javascript</li>
-                                <li>jQuery, Bootstrap, Angular.js</li>
-                                <li>Angular 2, C, C++, Java, PHP</li>
-                            </ul>
-                        </li>
-                    </ul>
+    <!-- COMPUTING SKILLS -->
+    <div class="container-fluid marketing">
+        <div class="row section-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1" data-aos="fade-right">
+                        <h2 class="featurette-heading"><i class="fas fa-desktop fa-fw"></i></h2>
+                        </div>
+                    <div class="col" data-aos="fade-left">
+                        <h2 class="featurette-heading"> Computing Skills <span class="text-muted">and Languages</span></h2>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <hr />
-
-            <div class="row featurette">
-                <div class="col-md-12">
-                    <h2 class="featurette-heading"><i class="fas fa-flask fa-lg fa-fw"></i> Biology Skills</h2>
-                    <ul class="lead">
-                        <li>Degree in Biological Sciences
-                            <ul>
-                                <li>Chemistry including Organic Chemistry</li>
-                                <li>Physics and Calculus II</li>
-                                <li>Psychology including Abnormal and Child Psychology</li>
-                            </ul>
-                        </li>
-                        <li>Volunteer work at <a href="https://www.bannerhealth.com/locations/loveland/mckee-medical-center">McKee Medical Center</a> working with medical records</li>
-                        <li>Advanced <abbr title="Certified Nursing Assistant">CNA</abbr> training from <a href="https://www.frontrange.edu/">Front Range Community College</a>
-                            <ul>
-                                <li>Recording basic vitals including <abbr title=Respiration>Resp</abbr>, <abbr title="Heart Rate">HR</abbr>, <abbr title="Blood Pressure">BP</abbr></li>
-                                <li>Bedside manner and patient interaction</li>
-                                <li>Medical terminology (definitions, prefixes, suffixes)</li>
-                                <li>Clinical experience</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Courses from <a href="https://summer.stanford.edu/program/high-school-high-school-summer-college">Stanford University Summer Sessions</a>
-                            <ul>
-                                <li>Bioethics</li>
-                                <li>Abnormal Psychology</li>
-                            </ul>
-                        </li>
-                    </ul>
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="lead">
+                            <li>Windows Applications
+                                <ul>
+                                        <li>Microsoft Office, Excel, Power Point, Outlook</li>
+                                        <li>Google Drive, Docs, Sheets, Slides</li>
+                                        <li>Visual Studio Community and Pro</li>
+                                        <li>Visual Studio Code</li>
+                                        <li>Github Desktop</li>
+                                </ul>
+                            </li>
+                            <p class="lead">Operating Systems including Windows (Vista, 7, 8, 10, SQL Server) and Linux</p>
+                            <li>Programming Languages and Tools
+                                <ul>
+                                    <li>C#, MVC, ASP.NET</li>
+                                    <li>HTML, CCS3, Javascript</li>
+                                    <li>jQuery, Bootstrap, Angular.js</li>
+                                    <li>Angular 2, C, C++, Java, PHP</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            
+    <!-- BIOLOGY SKILLS -->
+
+    <div class="container-fluid marketing">
+        <div class="row section-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1" data-aos="fade-right">
+                        <h2 class="featurette-heading"><i class="fas fa-flask fa-fw"></i></h2>
+                        </div>
+                    <div class="col" data-aos="fade-left">
+                        <h2 class="featurette-heading"> Biology Skills</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="lead">
+                            <li>Degree in Biological Sciences
+                                <ul>
+                                    <li>Chemistry including Organic Chemistry</li>
+                                    <li>Physics and Calculus II</li>
+                                    <li>Psychology including Abnormal and Child Psychology</li>
+                                </ul>
+                            </li>
+                            <li>Volunteer work at <a href="https://www.bannerhealth.com/locations/loveland/mckee-medical-center">McKee Medical Center</a> working with medical records</li>
+                            <li>Advanced <abbr title="Certified Nursing Assistant">CNA</abbr> training from <a href="https://www.frontrange.edu/">Front Range Community College</a>
+                                <ul>
+                                    <li>Recording basic vitals including <abbr title=Respiration>Resp</abbr>, <abbr title="Heart Rate">HR</abbr>, <abbr title="Blood Pressure">BP</abbr></li>
+                                    <li>Bedside manner and patient interaction</li>
+                                    <li>Medical terminology (definitions, prefixes, suffixes)</li>
+                                    <li>Clinical experience</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Courses from <a href="https://summer.stanford.edu/program/high-school-high-school-summer-college">Stanford University Summer Sessions</a>
+                                <ul>
+                                    <li>Bioethics</li>
+                                    <li>Abnormal Psychology</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+      <div class="container marketing">
 
             
 
                 <br />
 
                 <div class="row">
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4 col-md-6" data-aos="zoom-in-right">
                     <i class="fab fa-9x fa-linkedin" style="color: #0c8599;" title="LinkedIn"></i>
                     <h2>LinkedIn</h2>
                     <p>View my LinkedIn profile for more information on my location, experience, and to view recommendations from my previous coworkers.</p>
                     <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/mickelsonmichael/" role="button" target="_blank">View Profile »</a></p>
                   </div>
     
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4 col-md-6" data-aos="zoom-in-top">
                           <i class="fab fa-9x fa-github" title="Github"></i>
                     <h2>Github</h2>
                     <p>View the source files of this page on Github, or see my other creations.</p>
                     <p><a class="btn btn-secondary" href="https://github.com/mickelsonmichael" role="button" target="_blank">View Repos »</a></p>
                   </div>
     
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4 col-md-6" data-aos="zoom-in-left">
                           <i class="fas fa-file-alt fa-9x" style="color: #be4bdb" title="Plaintext"></i>
                     <h2>Resume</h2>
                     <p>To view a simplified version of this resume, click the link below. This version fits approximately on a single page and has minimal formatting</p>
@@ -189,5 +263,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        </script>
   </body>
 </html>
