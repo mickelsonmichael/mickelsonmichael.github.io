@@ -13,23 +13,7 @@ h1, h2, h3 {
 .box {
     border: 1px solid lightgray;
     border-radius: 4px;
-    box-shadow: 0 0 10px -3px black;
     background-color: white;
     padding: 1.5em;
     margin: 0;
 }
-
-/* .background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: .25;
-
-    background-image: url("images/arcade.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
