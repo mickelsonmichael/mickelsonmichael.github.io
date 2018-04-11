@@ -28,3 +28,34 @@ footer a:hover {
 footer ul > span {
     border-bottom: 1px solid #6c757d;
 }
+
+.bg-purple {
+    background-color: #333399;
+}
+
+.bg-purple a {
+    color: #fff;
+}
+
+.scroll-top-container {
+    position: sticky;
+    bottom: 0;
+    top: 2vh;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.scroll-top-icon {
+    background-color: #343a40;
+    border: #fff 1px solid;
+    padding: 7px 12px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.scroll-top-icon:hover, .scroll-top.icon:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c757d; 
+}
