@@ -18,10 +18,11 @@ function loadCardData() {
 function parseCardData(data) {
     let json = JSON.parse(data);
 
-    parseNeutralCards(json.cards.neutral);
+    parseCards(json.cards.neutral, "Neutral");
+    parseCards(json.cards.northern, "Northern Realms");
 }
 
-function parseNeutralCards(cards) {
+function parseCards(cards, deckName) {
     let tbody = document.getElementById("cards-tbody");
 
     for (let i = 0; i < cards.length; i++) {
@@ -30,6 +31,7 @@ function parseNeutralCards(cards) {
         let row = document.createElement("tr");
 
         row.appendChild(createCardRow(card.name));
+        row.appendChild(createCardRow(deckName));
         row.appendChild(createCardRow(card.power));
         row.appendChild(createCardRow(card.ability));
         row.appendChild(createCardRow(card.type));
@@ -39,6 +41,16 @@ function parseNeutralCards(cards) {
         row.appendChild(createCardRow(card.aquired));
 
         tbody.appendChild(row);
+    }
+}
+
+function parseNorthernCards(cards) {
+    let tbody = document.getElementById("cards-tbody");
+
+    for (let i=0; i< cards.length; i++) {
+        let card = cards[i];
+
+        let row = document.c
     }
 }
 
