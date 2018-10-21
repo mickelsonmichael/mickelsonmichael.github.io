@@ -1,5 +1,5 @@
 {
-    "cards": [
+    "cards": 
         {"neutral": [
             {
                 "name": "Geralt of Rivia",
@@ -343,7 +343,7 @@
                 "aquired": "Victory"
             }
         ]}
-    ]
+    
     ,"abilities": [
         {
             "name": "Morale Boost",

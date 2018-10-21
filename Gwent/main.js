@@ -23,6 +23,8 @@ function parseCardData(data) {
 }
 
 function parseNeutralCards(cards) {
+    console.log(cards);
+
     let tbody = document.getElementById("cards-table");
 
     for (let i = 0; i < cards.length; i++) {
