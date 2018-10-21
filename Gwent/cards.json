@@ -1,0 +1,391 @@
+{
+    "cards": [
+        {"neutral": [
+            {
+                "name": "Geralt of Rivia",
+                "power": 15,
+                "ability": "",
+                "type": "hero",
+                "price": 50,
+                "location": "Quest",
+                "territory": "Novigrad",
+                "quest": "Gwent: Old Friends",
+                "aquired": "From Thaler at the Seven Cats Inn"
+            },
+            {
+                "name": "Cirilla Fiona Elen Rianno",
+                "power": 15,
+                "ability": "",
+                "type": "hero",
+                "price": 50,
+                "location": "Quest",
+                "territory": "Novigrad (Grassy Knoll)",
+                "quest": "Gwent: Big City Players",
+                "aquired": "From a Scoia'Tael Trader and Camp in Novigrad Forest"
+            },
+            {
+                "name": "Vesemir",
+                "power": 6,
+                "ability": "",
+                "type": "unit",
+                "price": 20,
+                "location": "Quest",
+                "territory": "Novigrad",
+                "quest": "Gwent: Big City Players",
+                "aquired": "Vivaldi (Bank of Vivaldi)"
+            },
+            {
+                "name": "Yennefer of Vengerberg",
+                "power": 7,
+                "ability": "Medic",
+                "type": "hero",
+                "price": 50,
+                "location": "Quest",
+                "territory": "Novigrad",
+                "quest": "Gwent: Playing Innkeeps",
+                "aquired": "Stjepan (The Alchemy Inn, Oxenfurt)"
+            },
+            {
+                "name": "Triss Merigold",
+                "power": 7,
+                "ability": "",
+                "type": "hero",
+                "price": 20,
+                "location": "Quest",
+                "territory": "Novigrad",
+                "quest": "Gwent: Old Friends",
+                "aquired": "Lambert"
+            },
+            {
+                "name": "Dandelion",
+                "power": 2,
+                "ability": "Morale",
+                "type": "unit",
+                "price": 20,
+                "location": "Quest",
+                "territory": "Novigrad",
+                "quest": "A Matter of Life and Death",
+                "aquired": "Vegelbud Estate tournament"
+            },
+            {
+                "name": "Zoltan Chivay",
+                "power": 5,
+                "ability": "",
+                "type": "unit",
+                "price": 10,
+                "location": "Merchant",
+                "territory": "Random",
+                "quest": "",
+                "aquired": "Victory"
+            },
+            {
+                "name": "Emiel Regis Rohellec Terzieff",
+                "power": 5,
+                "ability": "",
+                "type": "unit",
+                "price": 10,
+                "location": "Merchant",
+                "territory": "Random",
+                "quest": "",
+                "aquired": "Victory"
+            },
+            {
+                "name": "Villentretenmerth",
+                "power": 7,
+                "ability": "Scorch",
+                "type": "unit",
+                "price": 10,
+                "location": "Merchant",
+                "territory": "Random",
+                "quest": "",
+                "aquired": "Victory"
+            },
+            {
+                "name": "Mysterious Elf (Avallac'h)",
+                "power": 0,
+                "ability": "Spy",
+                "type": "hero",
+                "price": 20,
+                "location": "Quest",
+                "territory": "Skellige",
+                "quest": "Gwent: Skellige Style",
+                "aquired": "Gremita (Gedyneith, Ard Skellig)"
+            },
+            {
+                "name": "Decoy",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 20,
+                "location": "Merchant",
+                "territory": "Velen",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Decoy",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 20,
+                "location": "Merchant",
+                "territory": "Novigrad (Gustfields)",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Decoy",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 50,
+                "location": "Merchant",
+                "territory": "White Orchard (White Orchard Tavern)",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Commander's Horn",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 10,
+                "location": "Merchant",
+                "territory": "Velen (Inn at the Crossroads)",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Commander's Horn",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 10,
+                "location": "Merchant",
+                "territory": "Novigrad (Passiflora)",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Commander's Horn",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 10,
+                "location": "Merchant",
+                "territory": "Novigrad (The Alchemy Inn, Oxenfurt)",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Scorch",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 50,
+                "location": "Merchant",
+                "territory": "Novigrad (Cunny of the Goose Inn)",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Scorch",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 50,
+                "location": "Merchant",
+                "territory": "Skellige (New Port Inn, Kaer Trolde Harbor)",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Scorch",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 50,
+                "location": "Merchant",
+                "territory": "Skellige (Urialla Village Inn, An Skellig)",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Biting Frost",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 0,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Biting Frost",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 0,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Biting Frost",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 20,
+                "location": "Merchant",
+                "territory": "Random",
+                "quest": "",
+                "aquired": "Victory"
+            },
+            {
+                "name": "Impenetrable Fog",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 20,
+                "location": "Merchant",
+                "territory": "Random",
+                "quest": "",
+                "aquired": "Victory"
+            },
+            {
+                "name": "Impenetrable Fog",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 0,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Impenetrable Fog",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 0,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Torrential Rain",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 0,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Torrential Rain",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 0,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Torrential Rain",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 20,
+                "location": "Merchant",
+                "territory": "Random",
+                "quest": "",
+                "aquired": "Victory"
+            },
+            {
+                "name": "Clear Weather",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 0,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Clear Weather",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 0,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Clear Weather",
+                "power": 0,
+                "ability": "",
+                "type": "",
+                "price": 20,
+                "location": "Merchant",
+                "territory": "",
+                "quest": "",
+                "aquired": "Victory"
+            }
+        ]}
+    ]
+    ,"abilities": [
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        },
+        {
+            "name": "Morale Boost",
+            "description": "Morale Boost"
+        }
+    ]
+
+
+}
