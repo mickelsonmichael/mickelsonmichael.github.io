@@ -1,6 +1,7 @@
 {
     "cards": 
-        {"neutral": [
+        {
+            "neutral": [
             {
                 "name": "Geralt of Rivia",
                 "power": 15,
@@ -10,7 +11,7 @@
                 "location": "Quest",
                 "territory": "Novigrad",
                 "quest": "Gwent: Old Friends",
-                "aquired": "From Thaler at the Seven Cats Inn"
+                "aquired": "Thaler (Seven Cats Inn)"
             },
             {
                 "name": "Cirilla Fiona Elen Rianno",
@@ -21,7 +22,7 @@
                 "location": "Quest",
                 "territory": "Novigrad (Grassy Knoll)",
                 "quest": "Gwent: Big City Players",
-                "aquired": "From a Scoia'Tael Trader and Camp in Novigrad Forest"
+                "aquired": "Scoia'Tael Trader (Novigrad Forest)"
             },
             {
                 "name": "Vesemir",
@@ -342,7 +343,420 @@
                 "quest": "",
                 "aquired": "Victory"
             }
-        ]}
+        ]
+
+        
+        ,"northern": [
+            {
+                "name": "Vernon Roche",
+                "power": 10,
+                "ability": "",
+                "type": "Hero",
+                "price": 50,
+                "location": "Quest",
+                "territory": "Velen",
+                "quest": "Gwent: Velen Players",
+                "aquired": "Hadko (Midcopse)"
+            },
+            {
+                "name": "John Natalis",
+                "power": 10,
+                "ability": "",
+                "type": "Hero",
+                "price": 50,
+                "location": "Quest",
+                "territory": "Novigrad",
+                "quest": "A Dangerous Game",
+                "aquired": "Ravvy (Golden Sturgeon Tavern)"
+            },
+            {
+                "name": "Esterad Thyssen",
+                "power": 10,
+                "ability": "",
+                "type": "Hero",
+                "price": 50,
+                "location": "Quest",
+                "territory": "Novigrad",
+                "quest": "Gwent: Big City Players",
+                "aquired": "Dijkstra (Bathouse)"
+            },
+            {
+                "name": "Philippa Eilhart",
+                "power": 10,
+                "ability": "",
+                "type": "Hero",
+                "price": 50,
+                "location": "Merchant",
+                "territory": "Random",
+                "quest": "",
+                "aquired": "Victory"
+            },
+            {
+                "name": "Thaler",
+                "power": 1,
+                "ability": "Spy",
+                "type": "Unit",
+                "price": 20,
+                "location": "Merchant",
+                "territory": "Skellige",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Ves",
+                "power": 5,
+                "ability": "",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Siegfried of Danesle",
+                "power": 5,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Yarpen Zigrin",
+                "power": 2,
+                "ability": "",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Sigismund Dijkstra",
+                "power": 4,
+                "ability": "Spy",
+                "type": "Unit",
+                "price": 20,
+                "location": "Quest",
+                "territory": "Velen",
+                "quest": "Gwent: Velen Players",
+                "aquired": "Bloody Baron (Crow's Perch)"
+            },
+            {
+                "name": "Keira Metz",
+                "power": 5,
+                "ability": "",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Sile de Tansarville",
+                "power": 5,
+                "ability": "",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Sabrina",
+                "power": 4,
+                "ability": "",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Sheldon Skaggs",
+                "power": 4,
+                "ability": "",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Dethmold",
+                "power": 7,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Prince Stennis",
+                "power": 5,
+                "ability": "Spy",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Trebuchet",
+                "power": 6,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Trebuchet",
+                "power": 6,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Poor F*cking Infantry",
+                "power": 1,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 20,
+                "location": "Merchant (Midcopse)",
+                "territory": "Velen",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Poor F*cking Infantry",
+                "power": 1,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Merchant (Midcopse)",
+                "territory": "Velen",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Poor F*cking Infantry",
+                "power": 1,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Crinfrid Reaves Dragon Hunter",
+                "power": 5,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 20,
+                "location": "Merchant (White Orchard Inn)",
+                "territory": "White Orchard",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Crinfrid Reavers Dragon Hunter",
+                "power": 5,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 50,
+                "location": "Merchant (Claywich Village)",
+                "territory": "Velen",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Crinfrid Reavers Dragon Hunter",
+                "power": 5,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 50,
+                "location": "Merchant (Midcopse)",
+                "territory": "Velen",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Redanian Foot Soldier",
+                "power": 1,
+                "ability": "",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Redanian Foot Soldie3r",
+                "power": 1,
+                "ability": "",
+                "type": "Unit",
+                "price": 10,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Catapult",
+                "power": 8,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 50,
+                "location": "Merchant (White Orchard Inn)",
+                "territory": "White Orchard",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Catapult",
+                "power": 8,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 50,
+                "location": "Merchant (Passiflora)",
+                "territory": "Novigrad",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Ballista",
+                "power": 6,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Ballista",
+                "power": 6,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Kaedweni Siege Expert",
+                "power": 1,
+                "ability": "Morale",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Kaedweni Siege Expert",
+                "power": 1,
+                "ability": "Morale",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Kaedweni Siege Expert",
+                "power": 1,
+                "ability": "Morale",
+                "type": "Unit",
+                "price": 50,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            },
+            {
+                "name": "Blue Stripes Commando",
+                "power": 4,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 20,
+                "location": "Merchant (White Orchard Inn)",
+                "territory": "White Orchard",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Blue Stripes Commando",
+                "power": 4,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 50,
+                "location": "Merchant (Midcopse)",
+                "territory": "Velen",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Blue Stripes Commando",
+                "power": 4,
+                "ability": "Bond",
+                "type": "Unit",
+                "price": 50,
+                "location": "Quartermaster (Crow's Perch)",
+                "territory": "",
+                "quest": "",
+                "aquired": "Purchase"
+            },
+            {
+                "name": "Siege Tower",
+                "power": 6,
+                "ability": "",
+                "type": "Unit",
+                "price": 20,
+                "location": "Merchant",
+                "territory": "Random",
+                "quest": "",
+                "aquired": "Victory"
+            },
+            {
+                "name": "Dun Banner Medic",
+                "power": 5,
+                "ability": "Medic",
+                "type": "Unit",
+                "price": 20,
+                "location": "Base Deck",
+                "territory": "",
+                "quest": "",
+                "aquired": ""
+            }
+        ]
+    }
+        
     
     ,"abilities": [
         {
