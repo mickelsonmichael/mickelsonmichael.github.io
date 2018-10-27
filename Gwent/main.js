@@ -1,65 +1,103 @@
 
-loadCardData();
+//loadCardData();
 
-function loadCardData() {
-    let xhr = new XMLHttpRequest();
+$("#cards-table").DataTable({
+    ajax: "cards.json",
+    columns: [
+        {
+            title: "Name",
+            data: "name"
+        },
+        {
+            title: "Deck",
+            data: "deck"
+        },
+        {
+            title: "Type",
+            data: "type"
+        },
+        {
+            title: "Territory",
+            data: "territory"
+        },
+        {
+            title: "Quest",
+            data: "quest"
+        },
+        {
+            title: "Giver",
+            data: "aquired"
+        }
+    ],
+    createdRow: function(row, data) {
+        let $row = $(row);
+        console.log(data);
 
-    xhr.overrideMimeType("application/json");
-    xhr.open("GET", "cards.json", true);
-    xhr.onloadend = function() {
-        parseCardData(xhr.responseText);
-
-        $("#cards-table").DataTable();
+        if (data.location === "Northern Realms") {
+            $row.css("background-color", "blue");
+        }
     }
+});
 
-    xhr.send();
-}
+// function loadCardData() {
+//     let xhr = new XMLHttpRequest();
 
-function parseCardData(data) {
-    let json = JSON.parse(data);
+//     xhr.overrideMimeType("application/json");
+//     xhr.open("GET", "cards.json", true);
+//     xhr.onloadend = function() {
+//         //parseCardData(xhr.responseText);
+//         //var data = JSON.parse(xhr.responseText);
+//         //console.log(data);
+//     }
 
-    parseCards(json.cards.neutral, "Neutral");
-    parseCards(json.cards.northern, "Northern Realms");
-}
+//     xhr.send();
+// }
 
-function parseCards(cards, deckName) {
-    let tbody = document.getElementById("cards-tbody");
+// function parseCardData(data) {
+//     let json = JSON.parse(data);
 
-    for (let i = 0; i < cards.length; i++) {
-        let card = cards[i];
+//     parseCards(json.cards.neutral, "Neutral");
+//     parseCards(json.cards.northern, "Northern Realms");
+// }
 
-        let row = document.createElement("tr");
+// function parseCards(cards, deckName) {
+//     let tbody = document.getElementById("cards-tbody");
 
-        row.appendChild(createCardRow(card.name));
-        row.appendChild(createCardRow(deckName));
-        row.appendChild(createCardRow(card.power));
-        row.appendChild(createCardRow(card.ability));
-        row.appendChild(createCardRow(card.type));
-        row.appendChild(createCardRow(card.price));
-        row.appendChild(createCardRow(card.territory));
-        row.appendChild(createCardRow(card.location));
-        row.appendChild(createCardRow(card.aquired));
+//     for (let i = 0; i < cards.length; i++) {
+//         let card = cards[i];
 
-        tbody.appendChild(row);
-    }
-}
+//         let row = document.createElement("tr");
 
-function parseNorthernCards(cards) {
-    let tbody = document.getElementById("cards-tbody");
+//         row.appendChild(createCardRow(card.name));
+//         row.appendChild(createCardRow(deckName));
+//         row.appendChild(createCardRow(card.power));
+//         row.appendChild(createCardRow(card.ability));
+//         row.appendChild(createCardRow(card.type));
+//         row.appendChild(createCardRow(card.price));
+//         row.appendChild(createCardRow(card.territory));
+//         row.appendChild(createCardRow(card.location));
+//         row.appendChild(createCardRow(card.aquired));
 
-    for (let i=0; i< cards.length; i++) {
-        let card = cards[i];
+//         tbody.appendChild(row);
+//     }
+// }
 
-        let row = document.c
-    }
-}
+// function parseNorthernCards(cards) {
+//     let tbody = document.getElementById("cards-tbody");
 
-function createCardRow(data) {
-    let col = document.createElement("td");
-    col.innerText = data;
+//     for (let i=0; i< cards.length; i++) {
+//         let card = cards[i];
 
-    return col;
-}
+//         let row = document.c
+//     }
+// }
+
+// function createCardRow(data) {
+//     let col = document.createElement("td");
+//     col.innerText = data;
+
+//     return col;
+// }
 
 // "name": "Geralt of Rivia",
 //                 "power": 15,
