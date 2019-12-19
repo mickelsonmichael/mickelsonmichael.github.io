@@ -1,7 +1,3 @@
-# mickelsonmichael.github.io
-Michael Mickelson's Portfolio
+# Welcome to my Resume
 
-This is the official resume for the Web Applications Developer Michael Mickelson
-
-The pages also include several tools including
-* A Settlers of Catan point tracking system
+This was once a repository for all my personal projects, but since the release of unlimited Github Pages, I have moved them all to their own repositories to keep this repo as clean as possible.
