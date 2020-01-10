@@ -1,6 +1,6 @@
 # Michael Mickelson
 
-Web Applications Developer
+Web Applications Developer  
 Kalamazoo, MI 49001
 mickelsonmichael@gmail.com
 
@@ -59,8 +59,8 @@ July 2013 - April 2018
 
 ### Colorado State University
 
-Fort Collins, CO
-Bachelor of Science
+Fort Collins, CO  
+Bachelor of Science  
 August 2012 - August 2017
 
 - Completed numerous courses in science including biology, psychology, chemistry, physics, and calculus
