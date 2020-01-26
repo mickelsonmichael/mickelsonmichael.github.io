@@ -6,6 +6,6 @@ mickelsonmichael@gmail.com
 
 For latest resume information:
 
-- <http://mickelsonmichael.github.io>
+- <https://mickelsonmichael.github.io>
 - [PDF](Michael.Mickelson.Resume.pdf)
 - [Docx](Michael.Mickelson.Resume.docx)
