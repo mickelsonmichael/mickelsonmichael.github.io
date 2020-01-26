@@ -39,23 +39,21 @@ footer ul > span {
 
 .scroll-top-container {
     position: sticky;
-    bottom: 0;
+    bottom: 1em;
     top: 2vh;
     text-align: center;
     margin-bottom: -15px;
 }
 
 .scroll-top-icon {
-    background-color: #343a40;
-    border: #fff 1px solid;
-    padding: 7px 12px;
+    border: #1d1f22 1px solid;
+    padding: .5em 2em;
     font-weight: bold;
     color: #fff;
-    margin-top: 10px;
+    margin: 1em auto;
 }
 
 .scroll-top-icon:hover, .scroll-top.icon:active {
     text-decoration: none;
     color: #fff;
-    background-color: #6c757d; 
 }
