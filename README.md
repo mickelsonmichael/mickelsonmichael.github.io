@@ -1,8 +1,8 @@
 # Michael Mickelson
 
-Web Developer  
-Broomfield, CO  
-mickelsonmichael@gmail.com  
+Senior Software Developer
+Westminster, CO  
+mickelsonmichael@gmail.com
 
 For latest resume information:
 
